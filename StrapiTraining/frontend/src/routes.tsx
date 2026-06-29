@@ -7,6 +7,7 @@ import ArticleDetailPage from "./pages/article/detail";
 import CategoryDetailPage from "./pages/category/detail";
 import AuthorDetailPage from "./pages/author/detail";
 import UserDetailPage from "./pages/user/detail";
+import ArticleCreatePage from "./pages/article/create";
 
 
 export default function AppRoutes() {
@@ -23,6 +24,8 @@ export default function AppRoutes() {
             
             <Route path="/user" element={<UserPage/>} />
             <Route path="/user/:id" element={<UserDetailPage/>} />
+
+            <Route path="/article/create" element={<ArticleCreatePage />} />
         </Routes>
     );
 }

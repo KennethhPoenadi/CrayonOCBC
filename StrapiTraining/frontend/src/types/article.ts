@@ -1,5 +1,6 @@
 import type { Author } from "./author"
 import type { Category } from "./category";
+import "antd/dist/reset.css";
 
 export type Article = {
   id: number;
