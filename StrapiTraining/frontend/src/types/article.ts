@@ -1,3 +1,6 @@
+import type { Author } from "./author"
+import type { Category } from "./category";
+
 export type Article = {
   id: number;
   documentId: string;
@@ -7,12 +10,6 @@ export type Article = {
   cover?: {
     url: string;
   };
-  author?: {
-    id: number;
-    name: string;
-  };
-  category?: {
-    id: number;
-    name: string;
-  };
+  author: Author;
+  category: Category;
 };
